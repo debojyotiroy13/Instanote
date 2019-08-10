@@ -1,0 +1,32 @@
+<div class="header">
+  <h1><a routerLink="/"><i  class="fa fa-sticky-note my-icon" style="padding-right: 10px;"></i></a>Instanote
+    <span style="text-align: right; float: right;">
+      <!-- <button class="my-btn"><i class="fa fa-compass my-icon-profile" style="padding-left: 10px;vertical-align: middle;"></i></button> -->
+      <!-- <button class="my-btn"><i class="fa fa-user my-icon-profile" style="padding-left: 10px;vertical-align: middle;"></i></button> -->
+    </span>
+  </h1>
+</div>
+<div class="container">
+<div class="row" style="height:100vh;width: 100%;margin: 0px;">
+  <div class="col-lg-4"></div>
+  <div class="col-lg-4">
+    <div class="login-card">
+    <div mat-dialog-content>
+      <h4>User Signin</h4>
+      <hr>
+      <mat-form-field style="width:100%">
+        <input matInput [(ngModel)]="email" placeholder="Email" class="dialog-input">
+      </mat-form-field>
+      <mat-form-field style="width:100%">
+        <input matInput type="password" [(ngModel)]="password" placeholder="Password" class="dialog-input">
+      </mat-form-field>
+    </div>
+    <div mat-dialog-actions>
+      <!-- <button class="comment-btn" mat-button (click)="onNoClick()">SIGNUP</button> -->
+      <button class="login-btn" style="background: hotpink" mat-button (click)="login()">LOGIN</button>
+      <button class="login-btn" style="background: deepskyblue;margin-bottom: 30px;" mat-button (click)="signup()">SIGNUP</button>
+    </div>
+    </div>
+  </div>
+</div>
+</div>

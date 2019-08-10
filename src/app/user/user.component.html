@@ -1,0 +1,61 @@
+<div class="header">
+  <h1><a routerLink="/"><i class="fa fa-sticky-note my-icon" style="padding-right: 10px;"></i></a>Instanote
+    <span style="text-align: right; float: right;">
+    </span>
+  </h1>
+</div>
+<div class="row" style="overflow: hidden;height: 90vh;margin-left: 0px;margin-right: 0px;">
+  <img id="notes-img" src="https://source.unsplash.com/random/1800x800?Desert&sig=510">
+</div>
+<div class="row" style="margin-top:-500px;margin-left: 0px;margin-right: 0px;">
+  <div class="col-lg-3"></div>
+  <div class="col-lg-6">
+    <div class="posts">
+      <div class="user-posts-section">
+        <div mat-dialog-content>
+          <h4>User Details</h4>
+          <hr>
+          <mat-form-field style="width:100%">
+            <input matInput type="text"  placeholder="Name" class="dialog-input">
+          </mat-form-field>
+          <mat-form-field style="width:100%">
+            <input matInput type="text"  placeholder="City" class="dialog-input">
+          </mat-form-field>
+          <mat-form-field style="width:100%">
+            <input matInput type="text" placeholder="Contact Number" class="dialog-input">
+          </mat-form-field>
+          <mat-form-field style="width:100%">
+              <input matInput type="text" placeholder="Email" class="dialog-input">
+            </mat-form-field>
+        </div>
+        <button class="login-btn" style="background: deepskyblue;margin-bottom: 30px;" mat-button
+          (click)="signup()">SUBMIT</button>
+      </div>
+    </div>
+  </div>
+</div>
+<footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-2"></div>
+        <div class="col-lg-8">
+          <form class="contact-form" name="contact" style="margin-top: 30px;" netlify>
+            <h2>CONTACT US</h2>
+            <br>
+            <p>
+              <input type="text" name="name" placeholder="name" />
+            </p>
+            <p>
+              <input type="email" name="email" placeholder="email" />
+            </p>
+            <p>
+              <textarea name="message" columns="5" placeholder="message" class="text-area"></textarea>
+            </p>
+            <p style="text-align: center">
+              <button type="submit" class="btn">send</button>
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </footer>
